@@ -1,4 +1,16 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Doctor Consultation Platform
+
+[Live Demo](https://doctorlist-nu.vercel.app/)
+
+This is a [Next.js](https://nextjs.org) project for a doctor consultation platform that allows users to find and connect with healthcare providers. The application supports filtering doctors by experience, fees, languages, and consultation modes.
+
+## Features
+
+- Search and filter doctors by various criteria
+- View doctor profiles with detailed information
+- Choose between online consultation and hospital visits
+- Responsive design for all device sizes
+- MongoDB integration for doctor data storage
 
 ## Getting Started
 
@@ -18,7 +30,24 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Project Structure
+
+- `src/app`: Contains the main application pages and API routes
+- `src/components`: Reusable UI components like Navbar, Doctorlist, and filters
+- `src/lib`: Database configuration and schemas
+
+## API Endpoints
+
+- `GET /api/filter`: Filter doctors based on various criteria
+- `POST /api/doctor`: Add new doctor(s) to the database
+
+## MongoDB Schema
+
+The application uses MongoDB for storing doctor information with the following schema:
+- Personal details (name, title, specialization)
+- Professional information (experience, education, fees)
+- Location and clinic details
+- Consultation options (online/in-person)
 
 ## Learn More
 
